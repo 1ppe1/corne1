@@ -9,6 +9,108 @@
 #include <dt-bindings/zmk/keys.h>
 
 / {
+    combos {
+        compatible = "zmk,combos";
+
+        Right {
+            bindings = <&kp RIGHT>;
+            key-positions = <41 22>;
+            timeout-ms = <0>;
+            layers = <0>;
+            require-prior-idle-ms = <0>;
+        };
+
+        upper {
+            bindings = <&kp UP>;
+            key-positions = <41 10>;
+            layers = <0>;
+        };
+
+        Left {
+            bindings = <&kp LEFT>;
+            key-positions = <41 21>;
+            layers = <0>;
+        };
+
+        Down {
+            bindings = <&kp DOWN>;
+            key-positions = <41 34>;
+            layers = <0>;
+        };
+
+        No1 {
+            bindings = <&kp N1>;
+            key-positions = <41 1>;
+            layers = <0>;
+        };
+
+        No2 {
+            bindings = <&kp NUMBER_2>;
+            key-positions = <41 2>;
+            layers = <0>;
+        };
+
+        No3 {
+            bindings = <&kp N3>;
+            key-positions = <3 41>;
+        };
+
+        No4 {
+            bindings = <&kp N4>;
+            key-positions = <41 4>;
+        };
+
+        No5 {
+            bindings = <&kp N5>;
+            key-positions = <5 41>;
+        };
+
+        No6 {
+            bindings = <&kp N6>;
+            key-positions = <41 6>;
+            layers = <0>;
+        };
+
+        No7 {
+            bindings = <&kp N7>;
+            key-positions = <41 7>;
+            layers = <0>;
+        };
+
+        No8 {
+            bindings = <&kp N8>;
+            key-positions = <8 41>;
+            layers = <0>;
+        };
+
+        No9 {
+            bindings = <&kp N9>;
+            key-positions = <41 9>;
+            layers = <0>;
+        };
+
+        No0 {
+            bindings = <&kp N0>;
+            key-positions = <10 41>;
+            layers = <0>;
+        };
+
+        Plus {
+            bindings = <&kp PLUS>;
+            key-positions = <41 40 11>;
+        };
+
+        equal {
+            bindings = <&kp EQUAL>;
+            key-positions = <10 41 40>;
+        };
+
+        minus {
+            bindings = <&kp MINUS>;
+            key-positions = <9 41 40>;
+        };
+    };
+
     keymap {
         compatible = "zmk,keymap";
 
