@@ -128,10 +128,10 @@
 
         layer_2 {
             bindings = <
-&trans  &trans  &trans  &trans  &trans  &trans    &lt 0 NUMBER_1  &lt 0 NUMBER_2  &lt 0 NUMBER_3  &lt 0 PLUS  &lt 0 MINUS  &lt 0 EQUAL
-&trans  &trans  &trans  &trans  &trans  &trans    &lt 0 N4        &lt 0 N5        &lt 0 NUMBER_6  &lt 0 N0    &lt 0 UP     &trans
-&trans  &trans  &trans  &trans  &trans  &trans    &lt 0 N7        &lt 0 N8        &lt 0 N9        &lt 0 LEFT  &lt 0 DOWN   &lt 0 RIGHT
-                        &trans  &trans  &trans    &trans          &trans          &trans
+&trans  &trans  &trans  &trans         &trans             &trans            &lt 0 NUMBER_1  &lt 0 NUMBER_2  &lt 0 NUMBER_3  &lt 0 PLUS  &lt 0 MINUS  &lt 0 EQUAL
+&trans  &trans  &trans  &trans         &trans             &trans            &lt 0 N4        &lt 0 N5        &lt 0 NUMBER_6  &lt 0 N0    &lt 0 UP     &lt 0 PERCENT
+&trans  &trans  &trans  &lt 0 AT_SIGN  &lt 0 EXCLAMATION  &lt 0 QUESTION    &lt 0 N7        &lt 0 N8        &lt 0 N9        &lt 0 LEFT  &lt 0 DOWN   &lt 0 RIGHT
+                        &trans         &trans             &trans            &trans          &trans          &trans
             >;
         };
 
