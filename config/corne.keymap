@@ -136,10 +136,10 @@
 
         layer_2 {
             bindings = <
-&trans  &trans  &trans  &trans         &trans             &trans            &mt RCMD NUMBER_1  &mt RCMD NUMBER_2  &lt 0 NUMBER_3  &lt 0 PLUS  &lt 0 MINUS  &lt 0 EQUAL
-&trans  &trans  &trans  &trans         &trans             &trans            &lt 0 N4           &lt 0 N5           &lt 0 NUMBER_6  &lt 0 N0    &lt 0 UP     &lt 0 PERCENT
-&trans  &trans  &trans  &lt 0 AT_SIGN  &lt 0 EXCLAMATION  &lt 0 QUESTION    &lt 0 N7           &lt 0 N8           &lt 0 N9        &lt 0 LEFT  &lt 0 DOWN   &lt 0 RIGHT
-                        &trans         &trans             &trans            &trans             &trans             &trans
+&trans  &trans  &trans  &trans                &trans                     &trans                        &mt RCMD NUMBER_1  &mt RCMD NUMBER_2  &mt RCMD NUMBER_3  &mt RCMD PLUS  &mt RCMD MINUS  &mt RCMD EQUAL
+&trans  &trans  &trans  &trans                &trans                     &trans                        &mt RCMD N4        &mt RCMD N5        &mt RCMD NUMBER_6  &mt RCMD N0    &mt RCMD UP     &mt RCMD PERCENT
+&trans  &trans  &trans  &mt LA(RCMD) AT_SIGN  &mt LA(LMETA) EXCLAMATION  &mt LA(LEFT_META) QUESTION    &mt RCMD N7        &mt RCMD N8        &mt RCMD N9        &mt RCMD LEFT  &mt RCMD DOWN   &mt RCMD RIGHT
+                        &trans                &trans                     &trans                        &trans             &trans             &trans
             >;
         };
     };
