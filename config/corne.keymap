@@ -8,111 +8,6 @@
 #include <dt-bindings/zmk/keys.h>
 
 / {
-    combos {
-        compatible = "zmk,combos";
-
-        Right {
-            bindings = <&kp RIGHT>;
-            key-positions = <41 22>;
-            timeout-ms = <0>;
-            layers = <0>;
-            require-prior-idle-ms = <0>;
-        };
-
-        upper {
-            bindings = <&kp UP>;
-            key-positions = <41 10>;
-            layers = <0>;
-        };
-
-        Left {
-            bindings = <&kp LEFT>;
-            key-positions = <41 21>;
-            layers = <0>;
-        };
-
-        Down {
-            bindings = <&kp DOWN>;
-            key-positions = <41 34>;
-            layers = <0>;
-        };
-
-        No1 {
-            bindings = <&kp N1>;
-            key-positions = <41 1>;
-            layers = <0>;
-        };
-
-        No2 {
-            bindings = <&kp NUMBER_2>;
-            key-positions = <41 2>;
-            layers = <0>;
-        };
-
-        No3 {
-            bindings = <&kp N3>;
-            key-positions = <3 41>;
-        };
-
-        No4 {
-            bindings = <&kp N4>;
-            key-positions = <41 4>;
-        };
-
-        No5 {
-            bindings = <&kp N5>;
-            key-positions = <5 41>;
-        };
-
-        No6 {
-            bindings = <&kp N6>;
-            key-positions = <41 6>;
-            layers = <0>;
-        };
-
-        No7 {
-            bindings = <&kp N7>;
-            key-positions = <41 7>;
-            layers = <0>;
-        };
-
-        No8 {
-            bindings = <&kp N8>;
-            key-positions = <8 41>;
-            layers = <0>;
-        };
-
-        No9 {
-            bindings = <&kp N9>;
-            key-positions = <41 9>;
-            layers = <0>;
-        };
-
-        No0 {
-            bindings = <&kp N0>;
-            key-positions = <10 41>;
-            layers = <0>;
-        };
-
-        Plus {
-            bindings = <&kp PLUS>;
-            key-positions = <41 40 11>;
-            layers = <0>;
-        };
-
-        equal {
-            bindings = <&kp EQUAL>;
-            key-positions = <10 41 40>;
-            layers = <0>;
-        };
-
-        minus {
-            bindings = <&kp MINUS>;
-            key-positions = <9 41 40>;
-            layers = <0>;
-        };
-    };
-
     macros {
         new_macro: new_macro {
             compatible = "zmk,behavior-macro";
@@ -127,19 +22,19 @@
 
         layer_Base {
             bindings = <
-&kp TAB           &kp Q  &kp W  &kp E         &kp R     &kp T        &kp Y      &kp U              &kp I                                 &kp O             &kp P             &kp BACKSPACE
-&kp LEFT_CONTROL  &kp A  &kp S  &kp D         &kp F     &kp G        &kp H      &kp J              &kp K                                 &kp L             &kp LEFT_BRACKET  &kp RIGHT_BRACKET
-&kp LEFT_SHIFT    &kp Z  &kp X  &kp C         &kp V     &kp B        &kp N      &kp M              &kp LESS_THAN                         &kp GREATER_THAN  &kp COMMA         &kp PERIOD
-                                &kp LEFT_ALT  &kp LGUI  &kp SPACE    &kp ENTER  &kp RIGHT_COMMAND  &kp C_AC_NEXT_KEYBOARD_LAYOUT_SELECT
+&kp ESC           &kp Q  &kp W  &kp E         &kp R     &kp T        &kp Y      &kp U              &kp I                                 &kp O             &kp P             &kp BACKSPACE
+&kp LEFT_CONTROL  &kp A  &kp S  &kp D         &kp F     &kp G        &kp H      &kp J              &kp K                                 &kp L             &kp SEMICOLON     &kp SINGLE_QUOTE
+&kp LEFT_SHIFT    &kp Z  &kp X  &kp C         &kp V     &kp B        &kp N      &kp M              &kp COMMA                             &kp PERIOD        &kp FORWARD_SLASH &kp RIGHT_SHIFT
+                                &kp TAB       &kp LEFT_ALT  &kp LGUI  &kp SPACE  &lt 1 ENTER         &kp C_AC_NEXT_KEYBOARD_LAYOUT_SELECT
             >;
         };
 
         layer_2 {
             bindings = <
-&mt LEFT_COMMAND GRAVE  &trans  &trans  &trans                &trans                     &trans                        &mt RCMD NUMBER_1  &mt RCMD NUMBER_2  &mt RCMD NUMBER_3  &mt RCMD PLUS  &mt RCMD MINUS  &mt RCMD EQUAL
-&trans                  &trans  &trans  &trans                &trans                     &trans                        &mt RCMD N4        &mt RCMD N5        &mt RCMD NUMBER_6  &mt RCMD N0    &mt RCMD UP     &mt RCMD PERCENT
-&trans                  &trans  &trans  &mt LA(RCMD) AT_SIGN  &mt LA(LMETA) EXCLAMATION  &mt LA(LEFT_META) QUESTION    &mt RCMD N7        &mt RCMD N8        &mt RCMD N9        &mt RCMD LEFT  &mt RCMD DOWN   &mt RCMD RIGHT
-                                        &trans                &trans                     &trans                        &trans             &trans             &trans
+&kp GRAVE         &kp N1  &kp N2  &kp N3         &kp N4     &kp N5        &kp N6      &kp N7              &kp N8                               &kp N9            &kp N0            &kp DELETE
+&trans            &kp F1  &kp F2  &kp F3         &kp F4     &kp F5        &kp LEFT    &kp DOWN            &kp UP                               &kp RIGHT         &kp MINUS         &kp EQUAL
+&trans            &kp F6  &kp F7  &kp F8         &kp F9     &kp F10       &kp HOME    &kp PAGE_DOWN       &kp PAGE_UP                          &kp END           &kp LEFT_BRACKET  &kp RIGHT_BRACKET
+                                  &trans         &trans     &trans        &trans      &trans               &trans
             >;
         };
     };
