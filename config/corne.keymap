@@ -22,18 +22,18 @@
 
         layer_Base {
             bindings = <
-&kp ESC           &kp Q  &kp W  &kp E         &kp R     &kp T        &kp Y      &kp U              &kp I                                 &kp O             &kp P             &kp BACKSPACE
-&kp LEFT_CONTROL  &kp A  &kp S  &kp D         &kp F     &kp G        &kp H      &kp J              &kp K                                 &kp L             &kp SEMICOLON     &kp SINGLE_QUOTE
-&kp LEFT_SHIFT    &kp Z  &kp X  &kp C         &kp V     &kp B        &kp N      &kp M              &kp COMMA                             &kp PERIOD        &kp FORWARD_SLASH &kp RIGHT_SHIFT
-                                &kp TAB       &kp LEFT_ALT  &kp LGUI  &kp SPACE  &lt 1 ENTER         &kp C_AC_NEXT_KEYBOARD_LAYOUT_SELECT
+&kp ESC           &kp Q      &kp W   &kp E   &kp R   &kp T        &kp Y    &kp U      &kp I    &kp O    &kp P     &kp BSPC
+&kp LCTRL         &kp A      &kp S   &kp D   &kp F   &kp G        &kp H    &kp J      &kp K    &kp L    &kp SEMI  &kp SQT
+&kp LSHFT         &kp Z      &kp X   &kp C   &kp V   &kp B        &kp N    &kp M      &kp COMMA &kp DOT  &kp FSLH  &kp RSHFT
+                            &kp TAB   &kp LALT &kp LGUI &kp SPACE  &lt 1 RET           &kp C_AC_NEXT_KEYBOARD_LAYOUT_SELECT
             >;
         };
 
         layer_2 {
             bindings = <
-&kp GRAVE         &kp N1  &kp N2  &kp N3         &kp N4     &kp N5        &kp N6      &kp N7              &kp N8                               &kp N9            &kp N0            &kp DELETE
-&trans            &kp F1  &kp F2  &kp F3         &kp F4     &kp F5        &kp LEFT    &kp DOWN            &kp UP                               &kp RIGHT         &kp MINUS         &kp EQUAL
-&trans            &kp F6  &kp F7  &kp F8         &kp F9     &kp F10       &kp HOME    &kp PAGE_DOWN       &kp PAGE_UP                          &kp END           &kp LEFT_BRACKET  &kp RIGHT_BRACKET
+&kp GRAVE         &kp N1     &kp N2  &kp N3   &kp N4   &kp N5       &kp N6    &kp N7      &kp N8    &kp N9    &kp N0     &kp DEL
+&trans            &kp F1     &kp F2  &kp F3   &kp F4   &kp F5       &kp LEFT  &kp DOWN    &kp UP    &kp RIGHT &kp MINUS  &kp EQUAL
+&trans            &kp F6     &kp F7  &kp F8   &kp F9   &kp F10      &kp HOME  &kp PG_DN   &kp PG_UP &kp END   &kp LBKT   &kp RBKT
                                   &trans         &trans     &trans        &trans      &trans               &trans
             >;
         };
